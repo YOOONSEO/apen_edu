@@ -1,38 +1,70 @@
-@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
 html {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
-body {
-  background: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: subpixel-antialiased;
-  color: #666;
-  line-height: 25px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  overflow-x: hidden;
+img {
+  height: 40px;
+  padding-right: 8mm;
+  padding-right: 8mm;
 }
-
-h1, h2, h3, h4 {
+h1, h2 {
   font-size: 38px;
-  font-weight: 700;
-  font-family: "Source Sans Pro", sans-serif;
-  margin: 0 auto;
 }
-
-p {
-    font-weight: 400;
-    font-family: "Source Sans Pro", sans-serif;
-    margin: 0px;
-    font-size: 14px;
+@font-face {
+  font-family: NanumSquareRound;
+  src: local(NANUMSQUAREROUNDOTFL), 
+  local(나눔스퀘어라운드OTF), 
+  url(NANUMSQUAREROUNDOTFL.eot), 
+  url(NANUMSQUAREROUNDOTFL.woff), 
+  url(NANUMSQUAREROUNDOTFL.ttf); 
 }
+.btn1 {
+  font-family: NanumSquareRound;
+  font-weight: bold;
+  text-align:center;
+  font-size: 20px;
+  color: white;
 
-head {
-    margin: 0 auto;
+
+  border-radius:0.5em;
+  padding: 2mm 3mm;
+  background: none;
+  float: left;
+}
+#bgi {
+  background-image: url("./img/bgi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px; 
+}
+#home {
+  padding-top: 5mm;
+  padding-bottom: 5mm;
+  
+  text-align: center;
+
+  z-index: 1000;
+  }
+#section1 {
+  padding-top: 160mm;
+  padding-bottom: 70mm;
+  padding-left: 73mm;
+
+  font-family: NanumSquareRound;
+  font-weight: bold;
+  text-align:center;
+  line-height: 60px; 
+}
+#section2 {
+  padding-top: 10mm;
+  padding-bottom: 10mm;
+  
+  background-color: rgb(15, 3, 29);
+
+  text-align: center;
+}
+#section3 {
+  padding-top: 20mm;
+  padding-bottom: 20mm;
+  padding-right: 50mm;
+  padding-left: 50mm; 
 }

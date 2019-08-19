@@ -38,6 +38,27 @@
             url(INTERPARKGOTHICBOLD.woff), 
             url(INTERPARKGOTHICBOLD.ttf); 
           }
+          /*로그인*/
+          label {
+            color: white;
+          }
+          #login-form{
+            width:200px;
+            margin: 0 auto;
+
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 15px;
+          }
+          #login-form input, #login-form label{
+            display:block;
+          }
+          #login-form label{
+            margin-top: 10px;
+          }
+          #login-form input{
+            margin-top: 15px;
+          }
           /*상단바*/
           body {
             margin: 0;
@@ -46,6 +67,7 @@
             font-family: NanumSquare;
             font-size: 25px;
             vertical-align: bottom;
+            list-style-type: none;
 
             padding-right: 15mm;
           }
@@ -89,45 +111,23 @@
             font-size: 20px;
             color: white;
 
-
             border-radius:0.5em;
             padding: 2mm 3mm;
             background: none;
-            float: left;
           }
           /*배경*/
           #bgi {
-            background-image: url("./img/bgi.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 0px 0px; 
+            background-color: #0F052A;
           }
           /*섹션*/
           #section1 {
-            padding-top: 630px;
-            padding-bottom: 242px;
-            padding-left: 180px;
+            padding-top: 80mm;
+            padding-bottom: 95mm;
+            
 
             font-family: NanumSquareRound;
             font-weight: bold;
             line-height: 60px; 
-          }
-          #section2 {
-            padding-top: 130px;
-            padding-bottom: 10mm;
-            
-            background-color: #0F052A;
-
-            font-family: NanumSquareRound;
-            color: white;
-
-            text-align: center;
-          }
-          #section3 {
-            padding-top: 20mm;
-            padding-bottom: 20mm;
-            padding-right: 50mm;
-            padding-left: 50mm; 
           }
       </style>
 
@@ -137,28 +137,25 @@
       <header>
         <nav> 
           <ul class="menu">
-            <li class="nav-item"><a href="#section1"><font face="인터파크고딕" size="13"><font color="#B9A6FD">A</font>PEN</font></a></li>
-            <li class="nav-item"><a href="#section2">Vision</a></li>
+            <li class="nav-item"><a href="index.html"><font face="인터파크고딕" size="13"><font color="#B9A6FD">A</font>PEN</font></a></li>
+            <!--<li class="nav-item"><a href="#section2">Vision</a></li>
             <li class="nav-item"><a href="#section3">Lecture</a></li>
             <li class="nav-item"><a href="#section4">Other</a></li>
-            <li class="nav-item"><a href="login.html">Login</a></li>
+            <li class="nav-item"><a href="login.html">Login</a></li>-->
           </ul>
         </nav>
       </header>
       <section>
         <div id="section1">
-          <a href="#section2"><img src="./img/btn1.png" height="50"></a>
+          <form id="login-form" method="post">
+            <label class="legend">아이디</label>
+            <input name="userid" type="text">
+            <label class="legend">패스워드</label> 
+            <input name="passwprd" type="password"> 
+            <input type="button" value="로그인" class="btn1">
+          </form>
         </div>
       </section>
       </div>
-      <section>
-        <div id="section2">
-          우리의 비전<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
-        </div>
-      </section>
-      </div>
-      <footer>
-
-      </footer>
     </body>
 </html>
