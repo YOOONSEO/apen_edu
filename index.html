@@ -71,7 +71,6 @@
             }
           .nav-item {
             cursor: pointer;
-            vertical-align: text-bottom;
           }
           .nav-item a {
             text-align: center;
@@ -97,13 +96,14 @@
             float: left;
           }
           /*배경*/
+          body {
+            background-color: #0F052A;
+          }
           #bgi {
             background-image: url("./img/bgi.png");
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: 0px 0px;
-
-            background-color: #0F052A;
           }
           /*섹션*/
           #section1 {
@@ -117,18 +117,16 @@
             line-height: 80px; 
           }
           #section2 {
-            background-color: #0F052A;
-
             font-family: NanumSquare;
             color: white;
 
             text-align: center;
           }
           #section3 {
-            padding-top: 20mm;
-            padding-bottom: 20mm;
-            padding-right: 50mm;
-            padding-left: 50mm; 
+            padding-top: 180px;
+            padding-bottom: 100px;
+            padding-right: 180px;
+            padding-left: 180px; 
           }
           /*본문*/
           h1 {
@@ -137,6 +135,31 @@
           p {
             line-height: 170px;
             font-size: 27px;
+          }
+          /*테이블*/
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          .table1 {
+            width: 1500px;
+            margin: 0 auto;
+
+            font-family: NanumSquare;
+            font-size: 40px;
+            color: white;
+            list-style-type: none;
+          }
+          .t1 {
+            font-family: interpark;
+            font-size: 50px;
+            padding-bottom: 150px;
+          }
+          .t2 {
+            padding-bottom: 150px;
+          }
+          .t3{
+            padding-bottom: 50px;
           }
       </style>
 
@@ -162,13 +185,35 @@
           <a href="#section3"><img src="./img/btn1.png" height="70"></a>
         </div>
       </section>
-      </div>
       <section>
         <div id="section2">
           <img src="./img/vision.png" height="1070">
         </div>
       </section>
-      </div>
+      <section id="section3">
+        <div >
+          <table class="table1">
+            <tr>
+              <td class="t1">전체 강좌</td>
+            </tr>
+            <tr>
+              <td class="t2"><a href="#section4">코딩</a></td>
+            </tr>
+            <tr>
+              <td class="t2"><a href="#section5">연구</a></td>
+            </tr>
+            <tr>
+              <td class="t3"><a href="#section6">시제품 개발</a></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div id="section4">
+          <img src="./img/coding.png" height="900">
+        </div>
+      </section>
+      
       <footer>
 
       </footer>
